@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Estante Digital</title>
+    
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="icon" href="/imagens/mascote.png">
+</head>
+
+<body>
+    <main class="pai">
+        <div class="container">
+
+
+            <header class="login-pai">
+                <img class="mascote" src="mascote1.gif">
+                <h1 class="login-text">Cadastro</h1>
+            </header>
+
+            <div class="nome-sobrenome-pai">
+                <p class="dados">Usuário</p>
+                <input type="text" id="nome" placeholder="usuário" alt="Digite seu Nome de Usuário">
+            </div>
+            <div class="inputs-pai">
+                <p class="dados"> Digite seu e-mail</p>
+                <input id="email" type="email" placeholder="e-mail">
+            </div>
+            
+            <p class="dados">Digite sua senha</p>
+            <div class="senha">
+                <input id="senha" type="password" placeholder="senha">
+                <img class="senha-img" id="olho" src="fechado.png" alt="Mostrar senha" onclick="mostrarSenha()">
+            </div>
+
+            <div class="lembrar-pai">
+                <input id="lembrar" class="lembrar-input" type="checkbox">
+                <p class="lembrar-txt">Lembre-mim</p>
+                 <div class="esqueceu-pai">
+                <p class="esqueceu-text">Esqueceu a senha?</p>
+            </div>
+            </div>
+
+            <div class="entrar-pai">
+                <button class="entrar" onclick="cadastrar()">Criar conta</button>
+            </div>
+            
+            <div class="cadastro-pai">
+                <a href="/" class="cadastro-txt">Tenho conta!</a>
+            </div>
+
+           
+  
+       
+
+    </main>
+
+
+
+
+
+
+
+    
+ <script>
+        function cadastrar() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+            
+
+            var pacote = {
+                'nome': nome,
+                'email': email,
+                'senha': senha
+            }
+
+            var options = {
+                method: 'POST',
+                headers: { 'Content-type': 'application/json' },
+                body: JSON.stringify(pacote)
+            }
+            fetch('/salvar', options)
+                .then(res => res.text())
+                .then(resultado => {
+                    alert(resultado)
+                })
+        }
+    </script>
+</body>
+</html>

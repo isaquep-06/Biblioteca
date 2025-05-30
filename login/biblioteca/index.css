@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+    background-color: #8888b5;
+    font-family: sans-serif;
+}
+
+
+.txt-destaque {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 100;
+    padding-top: 50px;
+    max-width: 25%;
+    line-height: 100px;
+}
+
+hr {
+    border: 1px solid #a1a1d9;
+}
+
+h1 {
+    color: white;
+    font-size: 6em;
+    font-weight: 100;
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+}
+
+.imagem {
+    width: 500px;
+    height: 550px;
+    padding: 50px;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: 100px;
+    padding-left: 40px;
+}
+
+.img-livro {
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px -1px 3px 5px #00000091;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    font-weight: 100;
+}
+
+.livro-pai {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #8080be;
+    border-radius: 10px;
+    justify-content: center;
+    border: 50px solid #8080be;
+    box-shadow: 0px 0px 10px 0px #00000052;
+}
+
+.mae-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.download {
+    width: 25px;
+    height: 25px;
+    padding-bottom: 5px;
+}
+
+
+
+.maior {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 60px;
+}
+
+button {
+    background: none;
+    width: 80px;
+    height: 40px;
+    border: none;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.download-p {
+    color: #ffffff9e;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.download-p:hover {
+    color: red;
+}
+

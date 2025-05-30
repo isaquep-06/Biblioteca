@@ -1,0 +1,36 @@
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        img{
+            width: 400px;
+            border-radius: 5px;
+        }
+
+        h1{
+            font-size: 5em;
+            font-weight: bold;
+            font-family: system-ui;
+            color: wheat;
+            max-width: 950px;
+            text-align: center;
+        }
+
+        .img-h1{
+            width: 70px;
+        }

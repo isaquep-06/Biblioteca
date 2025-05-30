@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(fundo500.jpg);
+    background-size: cover;
+    font-family: system-ui;
+}
+
+.pai {
+    display: flex;
+    justify-content: start;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    background-color: #e3edef5d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: inset -1px -1px 20px 0px #0736689c;
+}
+
+.mascote {
+    width: 200px;
+}
+
+
+.login-pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.login-text {
+    color: #043d63;
+    font-size: 4em;
+
+}
+
+.dados {
+    color: #ebe8e8;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+
+.inputs-pai {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+input {
+    font-size: 19px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -1px -1px 20px 0px silver;
+    padding: 10px;
+    background-color: transparent;
+    width: 80%;
+    height: 30px;
+    transition: all 0.5s ease;
+    color: #eef1f3;
+}
+
+input:focus {
+    font-size: 20px;
+    box-shadow: inset 0px 0px 6px 0px #0d131659;
+    background-color: transparent;
+    outline: none;
+}
+
+/* input:hover {
+    border: none;
+    border-bottom: 1px solid #4a87af;
+    box-shadow: 0px 0px 6px 0px #32719b59;
+} */
+
+
+input::placeholder {
+    color: #363636;
+    font-size: 20px;
+}
+
+.senha {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.senha-img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.esqueceu-pai {
+    text-align: center;
+    padding-top: 10px;
+    gap: 90px;
+    display: flex;
+    padding-left: 150px;
+}
+
+.esqueceu-text {
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.lembrar-txt,
+.esqueceu-text {
+    cursor: pointer;
+}
+
+.lembrar-pai {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding-top: 30px;
+    gap: 10px;
+}
+
+.lembrar-txt {
+    font-size: 20px;
+    color: #eaedf0;
+}
+
+.lembrar-input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4a87af;
+    accent-color: rgb(255, 123, 0);
+}
+
+.entrar-pai {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.cadastro-pai {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.cadastro-txt {
+    color: #131212;
+    font-size: 15px;
+    font-weight: 600;
+    max-width: 200px;
+    text-align: center;
+}
+
+.entrar {
+    width: 50%;
+    height: 60px;
+    border: 1px solid #175f9c;
+    border-radius: 5px;
+    background-color: #0c4e7a;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    box-shadow: inset 1px -1px 6px 5px #105089;
+
+}
+
+.entrar:hover {
+    color: rgb(99, 142, 170);
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #d1d1d6;
+
+}
+
+.titulo-cabecalho {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+.cabecalho {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 80px;
+    padding: 50px 30px 0px 30px;
+    list-style-type: none;
+    background-color: #38393a;
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0px 0px 0px 5px #16151598;
+    align-items: center;
+}
+
+.cabecalho-img {
+    width: 30px;
+    list-style: none;
+    box-shadow: 0px -2px 0px 0px #7ba0d9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cabecalho-img:hover {
+    box-shadow: 0px -2px 0px 0px #a3c4f3;
+}
+
+
+a {
+    text-decoration: none;
+    color: #1f2937;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(https://images.pexels.com/photos/5912576/pexels-photo-5912576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    width: 100%;
+    height: 100vh;
+}
+
+.perfil {
+    background-color: #44444486;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 20%;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.pessoal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-perfil {
+    width: 150px;
+    border-radius: 100vh;
+}
+
+
+
+.informacoes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-txt {
+    color: silver;
+    font-weight: 100;
+}
+
+.icones {
+    width: 30px;
+}
