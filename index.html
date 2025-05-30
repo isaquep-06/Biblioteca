@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Estante Digital</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/imagens/mascote.png">
+</head>
+
+<body>
+    <main class="pai">
+        <div class="container">
+
+
+            <header class="login-pai">
+                <img class="mascote" src="mascote1.gif">
+                <h1 class="login-text">Acesso</h1>
+            </header>
+
+            <div class="inputs-pai">
+                <p class="dados"> Digite seu usuário</p>
+                <input id="nome" type="text" , placeholder="usuário">
+                <p class="dados">Digite sua senha</p>
+
+            </div>
+            <div class="senha">
+                <input id="senha" type="password" placeholder="senha">
+                <img class="senha-img" id="olho" src="fechado.png" alt="Mostrar senha" onclick="mostrarsenha()">
+            </div>
+
+            <div class="lembrar-pai">
+                <input id="lembrar" class="lembrar-input" type="checkbox">
+                <p class="lembrar-txt">Lembre-mim</p>
+                 <div class="esqueceu-pai">
+                <p class="esqueceu-text">Esqueceu a senha?</p>
+            </div>
+            </div>
+
+            <div class="entrar-pai">
+                <button class="entrar" id="enviar" onclick="entrar()">acessar</button>
+            </div>
+            
+            <div class="cadastro-pai">
+                <a href="/cadastro" class="cadastro-txt">Ainda não tem uma conta? Cadastre-se aqui!</a>
+            </div>
+
+  
+       
+
+    </main>
+
+
+
+
+
+
+<script>
+
+
+    function entrar() {
+    var nome = document.getElementById('nome').value;
+    var senha = document.getElementById('senha').value;
+
+    var pacote = {
+        'nome': nome,
+        'senha': senha
+    };
+
+    var options = {
+        method: 'POST',
+        headers: { 'Content-type': 'application/json' },
+        body: JSON.stringify(pacote)
+    };
+
+    fetch('/verificar', options)
+        .then(res => res.text())
+        .then(resultado => {
+            if (resultado === '1') {
+                window.location.href = '/inicio';  // URL da página inicial
+            } else {
+                alert('Dados incorretos!');
+            }
+        })
+    }
+
+//         function mostrarsenha() {
+            
+
+//             const senha = document.getElementById('olho');
+
+//             if(senha.type === 'password') {
+//                 senha.type = 'text';
+//             }
+//             else {
+//                 senha.type = 'password';
+//             }
+//         }
+// }
+</script>
+    
+
+</body>
+</html>
